@@ -39,3 +39,43 @@ pnorm(2, lower.tail = FALSE)
 mean <- 11
 sd <- 4
 pnorm(15, mean, sd) - pnorm(10, mean, sd)
+
+#p(-z <= z <= z) = .95
+#p(z <= -zo) = 2.5%
+pnorm(-1.959)
+qnorm(.025) #put in prob : gives the z value
+qnorm(.025, lower.tail = FALSE)
+
+qnorm(.2033)
+
+qnorm(.025, 30, 8)
+
+pnorm(9, 7.5, 2.5)
+pnorm(2, 7.5, 2.5)
+
+#quiz
+dbinom(4, 9, .46)
+
+pbinom(3, 11, .2)
+
+ppois(4, 21.4)
+ppois(2, .02)
+dbinom(5, 5, .84)  #cumulative from 0->9
+
+#p(x<=2)
+ppois(2, 150)
+
+#p(10 < x < 15)
+mean <- 2.09
+sd <- .48
+pnorm(3, mean, sd) - pnorm(1, mean, sd)
+pnorm(3.21, mean, sd)
+#p(-z <= z <= z) = .95
+#p(z <= -zo) = 2.5%
+pnorm()
+qnorm(.01) #put in prob : gives the z value
+qnorm(.01, lower.tail = FALSE)
+
+dbinom(2, 150, .02)
+
+choose(1000000, 100)
